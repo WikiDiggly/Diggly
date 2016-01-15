@@ -1,0 +1,81 @@
+body {
+  background-color: white;
+}
+
+.header {
+  padding: 0.4em 0.5em;
+  font-size: 1.5em;
+  background-color: #e2e2e2;
+}
+.header .fa-search {
+  float: right;
+}
+.header .fa-search:hover {
+  cursor: pointer;
+}
+
+.logo {
+  display: block;
+  margin: 10em auto 0;
+  width: 10em;
+}
+
+.search-container {
+  padding: 1em 0em;
+  text-align: center;
+  font-size: 2.5em;
+}
+.search-container .fa-search {
+  opacity: 0.3;
+  position: absolute;
+  padding: 10px 12px;
+  pointer-events: none;
+}
+.search-container .search-bar {
+  text-indent: 2em;
+  width: 20em;
+  border-radius: 0.3em;
+  border: none;
+  background-color: #EAEAEA;
+}
+.search-container .search-bar:focus {
+  outline: 0;
+}
+
+.recently-searched {
+  text-align: center;
+  margin: 4em auto 0;
+}
+.recently-searched .title {
+  font-size: 1.5em;
+  font-family: 'Poiret One', cursive;
+}
+.recently-searched .row {
+  padding: 1em 10em;
+}
+.recently-searched .col-md-4 {
+  padding: 0 2em;
+  height: 10em;
+}
+.recently-searched .col-md-4 .topic {
+  width: 100%;
+  height: 100%;
+  padding-top: 0.8em;
+  background-color: #f2f2f2;
+  text-align: center;
+  font-size: 2em;
+  border-radius: 0.2em;
+}
+.recently-searched .col-md-4 .topic .fa {
+  opacity: 0.4;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  background-color: #E2E2E2;
+  color: black;
+  text-align: center;
+  width: 100%;
+  padding: 0.5em 0;
+}
