@@ -5,7 +5,7 @@ body {
 .header {
     padding: 0.4em 0.5em;
     font-size: 1.5em;
-    background-color: #e2e2e2;
+    background-color: $light-grey;
 
     .fa-search {
         float: right;
@@ -23,68 +23,10 @@ body {
     width: 10em;
 }
 
-.search-container {
-    padding: 1em 0em;
-    text-align: center;
-    font-size: 2.5em;
-
-    .fa-search {
-        opacity: 0.3;
-        position: absolute;
-        padding: 10px 12px;
-        pointer-events: none;
-    }
-
-    .search-bar {
-        text-indent: 2em;
-        width: 20em;
-        border-radius: 0.3em;
-        border: none;
-        background-color: #EAEAEA;
-    }
-
-    .search-bar:focus {
-        outline: 0;
-    }
-}
-
-.recently-searched {
-    text-align: center;
-    margin: 4em auto 0;
-
-    .title {
-        font-size: 1.5em;
-        font-family: 'Poiret One', cursive;
-    }
-
-    .row {
-        padding: 1em 10em;
-    }
-
-    .col-md-4 {
-        padding: 0 2em;
-        height: 10em;
-
-        .topic {
-            width: 100%;
-            height: 100%;
-            padding-top: 0.8em;
-            background-color: #f2f2f2;
-            text-align: center;
-            font-size: 2em;
-            border-radius: 0.2em;
-
-            .fa {
-                opacity: 0.4;
-            }
-        }
-    }
-}
-
 .footer {
     position: absolute;
     bottom: 0;
-    background-color: #E2E2E2;
+    background-color: $light-grey;
     color: black;
     text-align: center;
     width: 100%;

@@ -1,1 +1,12 @@
+/**
+ * Diggly Mster SCSS Sheet
+ *
+ * Order matters, place import sheets to be cascaded in the bottom
+ */
+
+// Base files
+@import 'base/_variables.scss';
 @import 'base/_main.scss';
+
+// Search Feature
+@import 'search/_search.scss';
