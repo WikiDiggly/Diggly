@@ -4,7 +4,7 @@
   "description": "Wikipedia Visualization",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"STATUS: No test currently exists\" && exit"
   },
   "repository": {
     "type": "git",
@@ -21,7 +21,14 @@
     "url": "https://github.com/WikiDiggly/Diggly/issues"
   },
   "homepage": "https://github.com/WikiDiggly/Diggly#readme",
-  "devDependencies": {
-    "gulp": "^3.9.0"
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-clean": "^0.3.1",
+    "gulp-cssnano": "^2.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.1.1",
+    "path": "^0.12.7",
+    "wiredep": "^3.0.0",
+    "wrench": "^1.5.8"
   }
 }
