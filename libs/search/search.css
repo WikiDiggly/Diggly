@@ -7,6 +7,11 @@
 .results {
     width: 100%;
     padding-left: 0em;
+    position: absolute;
+    left: 0px;
+    z-index: 999;
+    background: white;
+    width: 100%;
 }
 
 .results.active{

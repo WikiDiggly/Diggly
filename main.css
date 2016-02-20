@@ -27,7 +27,8 @@ body {
 .search-container {
   width: 40%;
   padding: 1em 0em;
-  font-size: 1.5em;
+  font-size: 1em;
+  position: relative;
 }
 .search-container .fa-search {
   opacity: 0.3;
@@ -75,7 +76,7 @@ body {
 }
 
 .footer {
-  position: relative;
+  position: absolute;
   bottom: 0;
   background-color: #E2E2E2;
   color: black;
