@@ -1,0 +1,26 @@
+.searchBar {
+    width: 100%;
+    padding-left: 2em;
+}
+
+.results {
+    width: 100%;
+    padding-left: 0em;
+}
+
+.results.active{
+    box-shadow: 0px 0px 10px 1px lightgrey;
+}
+
+.results li {
+    list-style: none;
+    padding: 0.5em;
+}
+
+.results li:hover {
+    background-color: #f2f2f2;
+}
+
+.results .selected {
+    background-color: #e2e2e2;
+}
