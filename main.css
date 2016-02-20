@@ -27,13 +27,13 @@ body {
 .search-container {
   width: 40%;
   padding: 1em 0em;
-  font-size: 1em;
+  font-size: 1.2em;
   position: relative;
 }
 .search-container .fa-search {
   opacity: 0.3;
   position: absolute;
-  padding: 10px 12px;
+  padding: 6px 8px;
   pointer-events: none;
 }
 .search-container .search-bar {
