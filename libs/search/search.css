@@ -1,6 +1,7 @@
 .searchBar {
     width: 100%;
     padding-left: 2em;
+    display: block;
 }
 
 .results {
