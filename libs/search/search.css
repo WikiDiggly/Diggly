@@ -5,6 +5,7 @@
 }
 
 .results {
+    display: none;
     width: 100%;
     padding-left: 0em;
     position: absolute;
@@ -14,7 +15,8 @@
     width: 100%;
 }
 
-.results.active{
+.results.active {
+    display: block;
     box-shadow: 0px 0px 10px 1px lightgrey;
 }
 

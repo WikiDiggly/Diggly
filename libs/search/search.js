@@ -31,13 +31,19 @@ $(document).ready(function() {
             searchText = $('.searchBar').val();
 
             if (searchText != "") {
+                var searchTextForQuery = searchText.replace(' ', '+');
                 /* Getting search result for the current search string in the search bar */
                 $.ajax({
-                    url: "http://rack36.cs.drexel.edu/suggest/?q=" + searchText,
+                    url: "http://rack36.cs.drexel.edu/suggest/?q=" + searchTextForQuery,
                     type: "GET",
                     async: false,
                     success: function (response) {
                         searchResult_JSON = JSON.parse(response);
+                        console.log('recieved json:');
+                        console.log(searchResult_JSON);
+                    },
+                    error: function (errorReport) {
+                        console.log('Error happened in AJAX Request!!');
                     }
                 });
 
@@ -47,7 +53,8 @@ $(document).ready(function() {
                 for (var i = 0; i < len-1; i++) {
                     var temp = searchResult_JSON[i].title;
                     temp = searchResult_JSON[i].title.toLowerCase();
-                    if(temp.indexOf(searchText) >= 0 || searchResult_JSON[i].title.indexOf(searchText) >= 0) {
+                    var tempSearchText = searchText.toLowerCase();
+                    if(temp.indexOf(tempSearchText) >= 0 || searchResult_JSON[i].title.indexOf(tempSearchText) >= 0) {
                         $('.results').append('<li>' + searchResult_JSON[i].title + '</li>');
                     }
                 }
@@ -94,6 +101,7 @@ $(document).ready(function() {
         } else if (keyPressed == 13) {
             selectedSearchString = $('.results .selected').text();
             $('.searchBar').val(selectedSearchString);
+            $('.results').removeClass('active');
             $('.results').empty();
 
             /* Creating search event */
@@ -106,6 +114,7 @@ $(document).ready(function() {
     $('body').on('click', '.results li', function(event) {
         selectedSearchString = $(this).text();
         $('.searchBar').val(selectedSearchString);
+        $('.results').removeClass('active');
         $('.results').empty();
 
         /* Creating search event */
