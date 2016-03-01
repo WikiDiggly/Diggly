@@ -11,6 +11,10 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
+        <script src="libs/debounce/debounce.min.js"></script>
+        <script src="libs/search/search.js"></script>
+        <link rel="stylesheet" href="libs/search/search.css">
+
         <link rel="stylesheet" href="main.css">
         <script src="main.js"></script>
     </head>
@@ -23,9 +27,10 @@
 
         <img src="imgs/Logo.png" alt="" class="logo">
 
-        <div class="search-container">
+        <div class="search-container center">
             <span class="fa fa-search"></span>
-            <input type="text" placeholder="Search" class="search-bar">
+            <input type="text" placeholder="Search" class="searchBar">
+            <ul class="results"></ul>
         </div>
 
         <div class="recently-searched">
